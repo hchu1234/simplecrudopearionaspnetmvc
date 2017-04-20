@@ -1,0 +1,65 @@
+﻿@model IEnumerable<CRUDOperation.Models.Movie>
+@{
+    ViewBag.Title = "Student List";
+}
+
+<h2>Movie CRUD Operation</h2>
+<div>
+    <div class="row">
+        <a href="@Url.Action("Add","Movie")" class="btn btn-sm btn-primary">Add</a>
+        <div class="col-md-12">
+            <table class="table table-striped">
+
+                <thead>
+                    <tr>
+                        <th>
+                            Id
+                        </th>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Poster
+                        </th>
+                        <th>
+                            Date
+                        </th>
+                        <th>
+                            Operations
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.Count() > 0)
+                    {
+                        if (Model != null)
+                        {
+                            foreach (var i in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @i.Id
+                                    </td>
+                                    <td>
+                                        @i.Name
+                                    </td>
+                                    <td>
+                                        <img src="~/Content/Img/@i.Poster" alt="@i.Name" height="30%" width="30%" />
+                                    </td>
+                                    <td>
+                                        @String.Format("{0:MM/dd/yyyy}", @i.DateOfRelease)
+                                    </td>
+                                    <td>
+                                        <a href="@Url.Action("Add","Movie",new {id=i.Id })" class="btn btn-sm btn-primary">Edit</a>
+                                        <a href="@Url.Action("Delete", "Movie", new { id = @i.Id })" class="btn btn-sm btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

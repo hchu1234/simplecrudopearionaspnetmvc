@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDOperation", "SImpleCURDOperaion\CRUDOperation.csproj", "{56F69E09-E5F7-47BB-BE96-5E50029A37FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDOperation.Common", "CRUDOperation.Common\CRUDOperation.Common.csproj", "{BDF5E96C-DE0D-49B5-A410-23EF322D5365}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56F69E09-E5F7-47BB-BE96-5E50029A37FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56F69E09-E5F7-47BB-BE96-5E50029A37FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56F69E09-E5F7-47BB-BE96-5E50029A37FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56F69E09-E5F7-47BB-BE96-5E50029A37FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDF5E96C-DE0D-49B5-A410-23EF322D5365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDF5E96C-DE0D-49B5-A410-23EF322D5365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDF5E96C-DE0D-49B5-A410-23EF322D5365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDF5E96C-DE0D-49B5-A410-23EF322D5365}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
